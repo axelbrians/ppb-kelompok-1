@@ -201,7 +201,7 @@ class MainActivity : AppCompatActivity() {
 
         if (requestCode == PICK_IMAGE_CODE && resultCode == Activity.RESULT_OK && data != null) {
             data.data?.let {
-                val imageUri = data.data
+                val imageUri = it
                 createAndLaunchTweetRequest(imageUri)
             }
 
