@@ -37,8 +37,6 @@ class MainActivityViewModel @Inject constructor(
                 val res = apiService.getAllPost()
                 val body = res.body()
                 Timber.d(body.toString())
-
-
                 if (res.isSuccessful) {
                     _allPostsResult.postValue(Response.Success(body!!))
                     _posts.postValue(body.data)

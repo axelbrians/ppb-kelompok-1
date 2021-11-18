@@ -23,7 +23,7 @@
         android:layout_marginHorizontal="12dp"
         android:lines="1"
         android:ellipsize="end"
-        android:text="Pakde Owino"
+        android:text="Nama pengguna"
         android:textColor="@color/white_primary"
         android:textSize="17sp"
         android:textStyle="bold"

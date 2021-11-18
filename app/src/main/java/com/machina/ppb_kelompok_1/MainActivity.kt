@@ -218,7 +218,7 @@ class MainActivity : AppCompatActivity() {
             stream?.close()
 
             val byteArrayOutputStream = ByteArrayOutputStream()
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream)
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream)
             val byteArray: ByteArray = byteArrayOutputStream.toByteArray()
 
             val encoded = Base64.encodeToString(byteArray, Base64.DEFAULT)
